@@ -33,15 +33,17 @@
             if (ballX > canvas.width) {
                 ballSpeedX = -ballSpeedX;
             }
-
         }
 
         function drawEverything() {
+            // Next line fills the canvas with black.
             colorRect(0, 0, canvas.width, canvas.height, 'black');
-            canvasContext.fillStyle = 'white';
-            colorRect(0, 210, 10, 100);
-            canvasContext.fillStyle = 'red';
-            canvasContext.fillRect(ballX, 100, 10, 10);
+
+            // Left paddle.
+            colorRect(0, 210, 10, 100, 'white');
+
+            //This is the ball.
+            colorRect(ballX, 100, 10, 10, 'red');
         }
 
         function colorRect(leftX, topY, width, height, drawColor) {
