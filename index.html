@@ -17,7 +17,7 @@
 
         var player1Score = 0;
         var player2Score = 0;
-        const WINNING_SCORE = 3;
+        const WINNING_SCORE = 10;
 
         var showingWinScreen = false;
 
@@ -136,8 +136,8 @@
         }
 
         function drawEverything() {
-            // Next line fills the canvas with black.
-            colorRect(0, 0, canvas.width, canvas.height, 'black');
+            // Next line fills the canvas with green.
+            colorRect(0, 0, canvas.width, canvas.height, 'green');
 
             if (showingWinScreen) {
                 canvasContext.fillStyle = 'white';
